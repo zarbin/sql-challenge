@@ -1,0 +1,42 @@
+#  Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+#  NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+#  Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+#  NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
+#  Modify this code to update the DB schema diagram.
+#  To reset the sample schema, replace everything with
+#  two dots ('..' - without quotes).
+
+"Departments"
+--
+"dept_no" varchar(4) PK
+"dept_name" varchar(30)
+
+"Dept_Mananger"
+--
+"dept_no" varchar(4) FK >- Departments.dept_no
+"emp_no" int PK
+
+"Dept_Emp"
+--
+"emp_no" int FK >- Employees.emp_no
+"dept_no" varchar(4) FK >- "Departments"."dept_no"
+
+"Employees"
+--
+"emp_no" int PK FK - Salaries.emp_no
+"emp_title_id" varchar(5) FK >- "Titles"."title_id"
+"birth_date" date
+"first_name" varchar(30)
+"last_name" varchar(30)
+"sex" varchar(1)
+"hire_date" date
+
+"Salaries"
+--
+"emp_no" int PK
+"salary" money
+
+"Titles"
+--
+"title_id" varchar(5) PK
+"title" varchar(30)
