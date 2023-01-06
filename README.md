@@ -1,5 +1,8 @@
 # SQL Challenge - Module 9 Homework
+Module 9 Challenge for UTA DataViz Bootcamp\
+01/05/2023
 
+# Summary
 Below are the ERD Diagram, SQL statemetns, sample data returned for SQL Challege Module 9 Homework.  
 
 ERD Diagram
